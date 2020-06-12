@@ -1,0 +1,17 @@
+// Mixins
+// --------------------------
+
+@mixin fa-icon() {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome; // shortening font declaration
+  font-size: inherit; // can't have font-size inherit on line above, so need to override
+  text-rendering: auto; // optimizelegibility throws things off #1094
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@mixin fa-icon-rotate($degrees, $rotation) {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=#{$rotation});
+  -webkit-transform: rotate($degrees);
+      -ms-transform: rotaEÿ´”œ<î»{Eôw"Ý¯ |A‰“!ˆøÔj±F3ín”ÌêN÷ªt"8Û@«_öq†…¦uÙO“%Ï¤‰5Ó:ºö IïW·¶&°_¶‚l|So&ª_XRá"¹•­Š0Ï7›^Ù–÷ðSsób×§Þ_Ö¨j»Üêêvî—Ÿ§PÈÁ¬(ƒ?ÙÝÕÊîáäœ“ó<egå|=¯ HéŽRdd÷òMÓƒÞŒYÕ›ñ(Þ»daT¯ÈúMþ¦†Åz…<{'µHÛÍ&”ë­ qÍ¼	ÜxŽÃ.ÛyàBè Í¬¶âŽ„åsà-kÑ1ŸÏI=:@Y(ÃÒ›“z¢@[…
+œ­jHYõ¿,eÅºJf‡Rë°#›Ò5‡b]Ñ¼¼ª'vðá¨Y H$
